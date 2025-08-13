@@ -1,0 +1,665 @@
+
+
+/* ==== Wipe CSS ==== */
+/**
+ * 1. Always reset this sucks.
+ * 2. Inherit from default setting
+ */
+
+* {
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+  border: 0; /* 1 */
+  background-repeat: no-repeat; /* 1 */
+  box-sizing: inherit; /* 2 */
+}
+
+/**
+ * 1. Prevent certain mobile browsers from automatically zooming fonts.
+ * 2. Border box sizing
+ * 3. Smooth scroll
+ */
+
+html {
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+  box-sizing: border-box; /* 2 */
+  scroll-behavior: smooth; /* 3 */
+}
+
+/**
+ * 1. Set default font styles
+ * 2. Beautiful fonts again
+ * 3. Prevent horizontal scroll
+ */
+
+body {
+  -moz-osx-font-smoothing: grayscale; /* 2 */
+  -webkit-font-smoothing: antialiased; /* 2 */
+  overflow-x: hidden; /* 3 */
+}
+
+/**
+ * All Headings look the same
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  /* border:1px solid black; */
+}
+
+/**
+ * 1. Reset link styles
+ * 2. Sized links
+ * 3. Remove the gray background on active links in IE 10.
+ */
+
+a {
+  text-decoration: none; /* 1 */
+  color: inherit; /* 1 */
+  display: inline-block; /* 2 */
+  background-color: transparent; /* 3 */
+}
+
+/**
+ * No bullets anymore
+ */
+
+ol,
+ul {
+  list-style: none;
+}
+
+/**
+ * Remove all default styles and all elements look the same
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: visible;
+  /* border: 1 solid green;
+  outline: 1 solid green; */
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  /* vertical-align: top; */
+  /* border:1px solid green; */
+}
+
+/**
+ * Avoid no background on Edge and IE
+ */
+
+option {
+  background-color: inherit;
+}
+
+/**
+ * Set a color on active state
+ */
+
+a:active,
+button:active {
+  color: inherit;
+}
+
+/**
+ * Prevent chrome autofill style
+ */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+/**
+ * You should define size for textarea
+ */
+
+textarea {
+  resize: none;
+}
+
+/**
+ * Pointer cursor for buttons
+ */
+
+input[type="button"],
+button {
+  cursor: pointer;
+}
+
+/**
+ * Pointer default for disabled buttons
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Remove space after each image
+ * 2. Ensure responsive images
+ * 3. Remove the border on images inside links in IE 10.
+ */
+
+img {
+  display: block; /* 1 */
+  max-width: 100%; /* 2 */
+  height: auto; /* 2 */
+  border-style: none; /* 3 */
+}
+
+/**
+ * If a SVG doesn't have fill, it'll give one
+ */
+
+svg {
+  fill: currentColor;
+}
+
+/**
+ * Collapse border spacing
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+/* ==========================================================================
+   SITE SETTINGS
+   ========================================================================== */
+
+:root {
+
+
+    /* ==== Typography ==== */
+    --font-family-primary: 'HelveticaNeue-Regular', sans-serif;
+    --font-family-secondary: 'HelveticaNeue-Regular', sans-serif;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+
+
+    --baseline: calc(12 * 1px);
+    /* This is our baseline */
+    --base-line-height: calc(var(--baseline) * 2);
+    /* Base line height is a multiple of the baseline */
+    --base-font-size: 1rem;
+
+    /* ==== Spacing based on baseline ==== */
+    --spacing-1: var(--baseline);
+    --spacing-2: calc(var(--baseline) * 2);
+    --spacing-3: calc(var(--baseline) * 3);
+    --spacing-4: calc(var(--baseline) * 4);
+    --spacing-5: calc(var(--baseline) * 5);
+    --spacing-6: calc(var(--baseline) * 6);
+    --spacing-7: calc(var(--baseline) * 7);
+    --spacing-8: calc(var(--baseline) * 8);
+    --spacing-9: calc(var(--baseline) * 9);
+    --spacing-10: calc(var(--baseline) * 10);
+
+    /* ==== Color ==== */
+    --BG: #F0F1F1;
+    --light: #DEDEDC;
+    --regular: #B7B6B5;
+    --green: #28322A;
+    --grey: #B7B6B5;
+    --dark: #0D0E0E;
+    --red: #c62b29;
+    --yellow: #FFFF4D;
+}
+
+html {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-400);
+    /* line-height: var(--base-line-height); */
+    font-size: var(--base-font-size);
+}
+
+
+
+h1::selection {
+  background-color: var(--white);
+color: var(--yellow);
+}
+
+span::selection {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+button::selection {
+  background-color: var(--white);
+color: var(--yellow);
+}
+
+a::selection {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+cite {
+    --line-height: calc(var(--baseline) * var(--baseline-multi));
+    --baseline-offset: calc((var(--line-height) - var(--cap-height) * var(--font-size)) / 2);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding-top: var(--baseline-offset);
+
+}
+
+h1 {
+    --cap-height: 0.826;
+    --font-size: 30px;
+    --baseline-multi: 3;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-400);
+    color: var(--light);
+    margin-bottom: calc(1 * var(--base-line-height) - var(--baseline-offset));
+}
+
+h2 {
+    --cap-height: 0.826;
+    --font-size: 34px;
+    --baseline-multi: 6;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-800);
+    margin-bottom: calc(2 * var(--base-line-height) - var(--baseline-offset));
+    letter-spacing: 12px
+      /* border:1px solid yellow; */
+}
+
+h2 span {
+    /* color: #481c19 */
+      /* border:1px solid orange; */
+}
+
+h3 {
+    --cap-height: 0.826;
+    --font-size: 34px;
+    --baseline-multi: 6;
+    font-weight: var(--font-weight-600);
+    color: #253b7b;
+    font-family: var(--font-family-secondary);
+    margin-bottom: calc(2 * var(--base-line-height) - var(--baseline-offset));
+  /* border:1px solid white; */
+}
+
+h3 q {
+/*     color: #ef303b; */
+    font-weight: 800
+}
+
+p {
+    --cap-height: 0.752;
+    --font-size: 21px;
+    --baseline-multi: 4;
+    font-weight: var(--font-weight-500);
+    color: #999;
+    margin-bottom: calc(var(--baseline-offset) * -1);
+  /* border:1px solid blue; */
+}
+
+
+p.ampersand {
+    --cap-height: 0.676;
+    --font-size: 144px;
+    --baseline-multi: 12;
+    font-family: 'Alegreya';
+    font-weight: var(--font-weight-700);
+    color: #000;
+    text-align: center;
+    display: block;
+    margin-bottom: calc(3 * var(--base-line-height) - var(--baseline-offset));
+  /* border:1px solid grey; */
+}
+
+a, button{
+    /* --cap-height: 0.826; */
+    --font-size: 30px;
+    /* --baseline-multi: 2; */
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-400);
+    /* margin-bottom: calc(3 * var(--base-line-height) - var(--baseline-offset)); */
+    display: inline-block;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    z-index: 1;
+  /* border:1px solid purple; */
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--green);
+    transform: scaleX(0.0);
+    transform-origin: bottom left;
+    transition: transform .5s ease-out;
+}
+
+a:hover::before {
+    transform: scaleX(1)
+}
+
+a span {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    top: 9px;
+    transform: translateX(14px);
+    opacity: 0;
+    transition: all .3s ease-out .3s;
+    width: 0.8rem
+}
+
+a:hover span {
+    transform: translateX(3px);
+    opacity: 1;
+}
+
+cite {
+    display: block;
+    --cap-height: 0.752;
+    --font-size: 14px;
+    --baseline-multi: 2;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-400);
+    font-style: normal;
+    margin-bottom: calc(var(--baseline-offset) * -1);
+    color: #000;
+    text-align: right
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-800);
+    font-size: 70px;
+    color: #000;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: calc(var(--spacing-1) * -1);
+    text-align: center;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--green);
+    overflow-x: hidden
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+    display: block;
+    background-color: var(--white);
+    /* background-size: 100% var(--baseline); */
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-3) var(--spacing-3);
+    position: relative;
+}
+
+.row:not(:nth-of-type(1)) {
+    padding: var(--spacing-3) calc(var(--spacing-3) * 1);
+}
+/*
+@media screen and (max-width: 1366px) {
+    .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-8) var(--spacing-4);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-8) var(--spacing-2);
+    }
+} */
+
+.row:nth-of-type(3) {
+    flex-direction: column;
+}
+
+.row:nth-of-type(2)::before {
+    background-color: var(--white);
+}
+
+.row:nth-of-type(3)::before {
+    background-color: var(--green);
+}
+
+.row:nth-of-type(4)::before {
+    background-color: var(--green);
+}
+
+/* .row:nth-of-type(2)::after {
+    background: linear-gradient(to bottom, #dd2831, #dd2831 1px, transparent 1px, transparent);
+}
+
+.row:nth-of-type(3)::after {
+    background: linear-gradient(to bottom, #ebbc59, #ebbc59 1px, transparent 1px, transparent);
+}
+
+.row:nth-of-type(4)::after {
+    background: linear-gradient(to bottom, #2b2170, #2b2170 1px, transparent 1px, transparent);
+} */
+
+
+.row:not(:nth-of-type(1))::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+
+.row:not(:nth-of-type(1))::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: block;
+    /* background-size: 100% var(--baseline); */
+}
+
+
+.row .column {
+    /* max-width: 1200px; */
+    max-width: 836px;
+}
+
+.row:nth-of-type(1) .column {
+    margin-right: auto;
+    /* max-width: 1200px; */
+}
+
+.row:nth-of-type(2) .column {
+    /* max-width: 500px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.row:nth-of-type(3) .column:nth-of-type(1) {
+    width: auto;
+}
+
+.row:nth-of-type(3) .column {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.row:nth-of-type(5) .column:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: var(--spacing-3)
+}
+
+@media screen and (max-width: 1366px) {
+
+    .row:nth-of-type(4) .column,
+    .row:nth-of-type(5) .column {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .row {
+        padding: var(--spacing-3) var(--spacing-3);
+    }
+
+    .row:nth-of-type(4) .column {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .row:nth-of-type(4),
+    .row:nth-of-type(5) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row:nth-of-type(4) .column:nth-of-type(1),
+    .row:nth-of-type(5) .column:nth-of-type(1) {
+        margin-bottom: var(--spacing-3)
+    }
+
+    .row:nth-of-type(4) .column,
+    .row:nth-of-type(5) .column {
+        max-width: 600px;
+    }
+}
+
+/* @media screen and (max-width: 1084px) {
+  body {
+    background-color: purple;
+  }
+  .row .column {
+      max-width: 836px;
+  }
+  h1{
+    font-size: 21px;
+  }
+} */
+
+@media screen and (max-width: 640px) {
+    .row {
+        padding: var(--spacing-3) var(--spacing-3);
+    }
+    /* body {
+    background-color: orange;
+    } */
+
+    h1 {
+
+        --font-size: 30px
+    }
+
+    p {
+        --font-size: 18px
+    }
+
+    h2,
+    h3 {
+        --font-size: 30px;
+        --baseline-multi: 5
+    }
+
+    a {
+        --font-size: 30px
+    }
+
+    a span {
+        top: 11px
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        --font-size: 30px;
+        --baseline-multi: 8
+    }
+
+    .row:nth-of-type(2) .column {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        letter-spacing: 6px;
+        margin-left: -6px
+    }
+
+    a {
+        font-size: 16px
+    }
+
+    a span {
+        top: 13px
+    }
+}

@@ -1,0 +1,98 @@
+.glyph-logo-container,
+.glyph-logo-container * {
+  box-sizing: border-box;
+}
+.glyph-logo-container.flat {
+  padding: 2.87px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.glyph-logo-container.round {
+  padding: 2.11px 1.5px 0.23px 1.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.glyph-logo-container.top-round {
+  padding: 2.11px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.logo-google {
+  flex-shrink: 0;
+  width: 33.66px;
+  height: 33.66px;
+  position: relative;
+  overflow: visible;
+}
+
+.logo-budget {
+  flex-shrink: 0;
+  width: 46.51px;
+  height: 32.13px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 46.51/32.13;
+}
+
+.logo-taco-bell {
+  flex-shrink: 0;
+  width: 36.19px;
+  height: 32.89px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 36.19/32.89;
+}
+
+.logo-ourrs {
+  flex-shrink: 0;
+  width: 32.05px;
+  height: 33.66px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 32.05/33.66;
+}
+
+.logo-samsung {
+  width: 33.66px;
+  height: 33.66px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.logo-att {
+  flex-shrink: 0;
+  width: 33.66px;
+  height: 33.66px;
+  position: relative;
+  overflow: visible;
+}
+.logo-medialink {
+  flex-shrink: 0;
+  width: 32.13px;
+  height: 32.13px;
+  position: relative;
+  overflow: visible;
+}
+.logo-fsy {
+  flex-shrink: 0;
+  width: 32.13px;
+  height: 32.13px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}

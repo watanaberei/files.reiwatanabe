@@ -1,0 +1,33 @@
+:root {   
+    --color-main: #1B2421;
+    --color-files: #E9AF19;
+    --color-cases: #1B2421;
+    --color-books: #;
+    
+    
+    
+    --gridGap: 15px;
+    
+    --text-font-family: HelveticaNeue-Medium, Helvetica, sans-serif;
+    
+    --text01m-font-size: 90px;
+    --text02m-font-size: 45px;
+    --text03m-font-size: 21px;
+    --text04m-font-size: 15px;
+    
+    --text01m-font-weight: 400;
+    --text02m-font-weight: 500;
+    --text03m-font-weight: 400;
+    
+    --text01m-font-line-height: 90px;
+    --text02m-font-line-height: 36px;
+    --text03m-font-line-height: 10px;
+    
+    --text01m-font-style: Medium;
+    --text02m-font-style: Medium;
+    --text03m-font-style: Medium;
+    
+    --text01m-font-letter-spacing: 0.06pt;
+    --text02m-font-letter-spacing: 0.03pt;
+    --text03m-font-letter-spacing: 0.03pt;
+  }

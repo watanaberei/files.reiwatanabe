@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>rw - portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/screen/work.css">
+    <link rel="stylesheet" href="./css/utility/tooltip.css">
+    <link rel="stylesheet" href="./css/type/text.css">
+    <link rel="stylesheet" href="./css/type/type.css">
+    <link rel="stylesheet" href="./css/type/glyph.css">
+    <link rel="stylesheet" href="./css/global/tokens.css">
+    <link rel="stylesheet" href="./css/effector/array.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="_asset/favicon_io02/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="_asset/favicon_io02/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="_asset/favicon_io02/favicon-16x16.png">
+    <link rel="manifest" href="_asset/favicon_io02/site.webmanifest">
+    <!-- <link rel="mask-icon" href="_asset/favicon_io02/_asset/favicon-io02/safari-pinned-tab.svg?" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="figma">
+      <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwHeqSHNyw9kfc2qmhYmgx3%2FPresentation_Portfolio_Book_Product%3Fpage-id%3D0%253A1%26node-id%3D54-59313%26viewport%3D7507%252C-13357%252C0.49%26t%3DRHAC55VP6Vr81B9V-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D54%253A59313" allowfullscreen></iframe>
+      <!-- <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwHeqSHNyw9kfc2qmhYmgx3%2FPresentation_Portfolio_Book_Product%3Fpage-id%3D0%253A1%26node-id%3D54-59313%26viewport%3D-382%252C1163%252C0.04%26t%3DCYI0k8GX2veQgNa9-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D54%253A59313" allowfullscreen></iframe> -->
+    </div>
+    <!-- partial -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Function to apply display:none !important to matching classes
+          function hideElementsByClassPrefix(prefix) {
+              const elements = document.querySelectorAll(`[class^='${prefix}']`);
+              elements.forEach(element => {
+                  element.style.setProperty('display', 'none', '!important');
+              });
+          }
+
+          // Hide elements with classes starting with .embed_documentation_footer--documentationFooter
+          hideElementsByClassPrefix('embed_documentation_footer--documentationFooter');
+
+          // Hide elements with classes starting with .header--header
+          hideElementsByClassPrefix('header--header');
+      });
+    </script>
+  </body>
+</html>

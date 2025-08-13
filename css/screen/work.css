@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.figma {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.figma iframe {
+  align-item: center;
+}
+.embed_documentation_footer--documentationFooter--cRlI0, .embed_documentation_footer--documentationFooterLeft--LSi6J {
+  display: none !important;
+}
+
+.header--headerClear---veTr {
+  display: none !important;
+}

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.figma {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.figma iframe {
+  align-item: center;
+}
