@@ -162,7 +162,7 @@
         flex-basis: fit-content;
     }
 
-    & .logo,.glyph {
+    & .logo {
         gap: 0px;
         vertical-align:  anchor-center;
         gap: 0px;
