@@ -171,11 +171,11 @@ export const projectData = {
 
 
   ABG: {
-    "Design System": {
+    "Parenting System": {
       accountId: "ABG",
-      projectId: "Design System",
+      projectId: "Parenting-System",
       type: "design",
-      category: "Design System",
+      category: "Parenting Design System",
       accountName: "Avis Budget Group",
       projectName: "Tokenized Animation System",
       projectDescription: "A multi-brand, modularized global design library.",
@@ -183,9 +183,9 @@ export const projectData = {
       fileName: "discovery.html",
       attributes: ["Systems", "Docs", "Exploration"],
     },
-    "Redesign": {
+    "Redesigns": {
       accountId: "ABG",
-      projectId: "Redesign",
+      projectId: "Redesigns",
       type: "design",
       category: "Working File",
       accountName: "Avis Budget Group",
@@ -195,7 +195,6 @@ export const projectData = {
       fileName: "discovery.html",
       attributes: ["Systems", "Docs", "Exploration"],
     }
-  },
 
           
 
@@ -248,63 +247,10 @@ export const projectData = {
     }
   },
 
-  
-
-
-
-
-  // Add more accounts/projects freely; the container is fully dynamic.
+    
 };
 
 
 
 
 
-
-// export const projectData = {
-//   ATT: {
-//     "Low-Midfunnel": {
-//       companyId: "ATT",
-//       projectId: "Low-Midfunnel",
-//       accountName: "AT&T",
-//       projectName: "Low-Midfunnel",
-//       projectDescription: "Low-Midfunnel",
-//       type: "design",
-//       category: "Working File",
-//       fileKey: "11dDn02IJv75bAJC1L2hGu",
-//       fileName: "low-midfunnel.html",
-//       attributes: ["Midfunnel", "UX/UI", "CMS", "Strategy"]
-//     },
-//     "Case Study": {
-//       companyId: "ATT",
-//       projectId: "casestudy",
-//       accountName: "AT&T",
-//       projectName: "Casestudy",
-//       projectDescription: "Low-Midfunnel",
-//       type: "design",
-//       category: "Case Study",
-//       fileKey: "11dDn02IJv75bAJC1L2hGu",
-//       fileName: "reimagining.html",
-//       attributes: ["Midfunnel", "UX/UI", "CMS", "Strategy"]
-//     }
-//   },
-//   ChromeOS: {
-//     "Dev-Log": {
-//       companyId: "ChromeOS",
-//       projectId: "Dev-Log",
-//       accountName: "ChromeOS",
-//       projectName: "Developers Log",
-//       projectDescription: "Developers Log",
-//       type: "design",
-//       category: "Working File",
-//       fileKey: "4V95AGqunAQzgrS48AT3mw",
-//       fileName: "dev-log.html",
-//       attributes: ["Systems", "Docs", "Exploration"]
-//     }
-//   }
-
-//   // Add more companies/projects in the same pattern:
-//   // CompanyName: {
-//   //   "ProjectName": { companyId, projectId, type, fileKey, fileName, attributes }
-//   // }
-// };
