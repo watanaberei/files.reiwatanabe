@@ -33,6 +33,7 @@
   height: 22.44px;
   position: relative;
   overflow: visible;
+  vertical-align: middle;
 }
 
 .logo-budget {
