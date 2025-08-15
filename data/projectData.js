@@ -182,8 +182,6 @@ export const projectData = {
       fileKey: "4V95AGqunAQzgrS48AT3mw",
       fileName: "discovery.html",
       attributes: ["Systems", "Docs", "Exploration"],
-      accountName: "ABG",
-      groupTitle: "Reimagining"
     },
     "Redesign": {
       accountId: "ABG",
