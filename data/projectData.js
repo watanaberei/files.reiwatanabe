@@ -1,4 +1,23 @@
 // /projectData.js
+// Nested structure: accountName -> projectName -> fields
+
+
+
+
+// /projectData.js
+// Top-level keys are accountIds. Each account holds any number of projects.
+// Fields renamed to accountId (was companyId).
+
+// accountId:
+    // projectId:
+    // type:
+    // category:
+    // accountName:
+    // projectName: 
+    // projectDescription:
+    // fileKey:
+    // fileName:
+    // attributes:
 
 export const projectData = {
   ATT: {
@@ -241,3 +260,53 @@ export const projectData = {
 
 
 
+
+
+
+// export const projectData = {
+//   ATT: {
+//     "Low-Midfunnel": {
+//       companyId: "ATT",
+//       projectId: "Low-Midfunnel",
+//       accountName: "AT&T",
+//       projectName: "Low-Midfunnel",
+//       projectDescription: "Low-Midfunnel",
+//       type: "design",
+//       category: "Working File",
+//       fileKey: "11dDn02IJv75bAJC1L2hGu",
+//       fileName: "low-midfunnel.html",
+//       attributes: ["Midfunnel", "UX/UI", "CMS", "Strategy"]
+//     },
+//     "Case Study": {
+//       companyId: "ATT",
+//       projectId: "casestudy",
+//       accountName: "AT&T",
+//       projectName: "Casestudy",
+//       projectDescription: "Low-Midfunnel",
+//       type: "design",
+//       category: "Case Study",
+//       fileKey: "11dDn02IJv75bAJC1L2hGu",
+//       fileName: "reimagining.html",
+//       attributes: ["Midfunnel", "UX/UI", "CMS", "Strategy"]
+//     }
+//   },
+//   ChromeOS: {
+//     "Dev-Log": {
+//       companyId: "ChromeOS",
+//       projectId: "Dev-Log",
+//       accountName: "ChromeOS",
+//       projectName: "Developers Log",
+//       projectDescription: "Developers Log",
+//       type: "design",
+//       category: "Working File",
+//       fileKey: "4V95AGqunAQzgrS48AT3mw",
+//       fileName: "dev-log.html",
+//       attributes: ["Systems", "Docs", "Exploration"]
+//     }
+//   }
+
+//   // Add more companies/projects in the same pattern:
+//   // CompanyName: {
+//   //   "ProjectName": { companyId, projectId, type, fileKey, fileName, attributes }
+//   // }
+// };

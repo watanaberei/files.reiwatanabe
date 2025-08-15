@@ -1,0 +1,31 @@
+
+.content {
+  padding: 0px 5px 0px  5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+
+.items {
+    position: relative;
+    padding: 0px 5px 0px  5px;
+    
+  }
+  .item {
+    border-radius: 15px;
+    gap: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0px 5px 0px;
+  }
+
+
+.item-account {
+  margin: 10px 0px 10px 0px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>rw</title>
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <script type="text/javascript" src="script.js"></script>
+  <script type="module" src="/components/components.js"></script>
+
+  <link rel="stylesheet" href="/css/screen/work.css">
+
+  <link rel="stylesheet" href="/css/utility/tooltip.css">
+
+  <link rel="stylesheet" href="/css/type/text.css">
+  <link rel="stylesheet" href="/css/type/type.css">
+  <link rel="stylesheet" href="/css/type/glyph.css">
+
+  <link rel="stylesheet" href="/css/effector/array.css">
+
+  <link rel="stylesheet" href="/css/global/tokens.css">
+  <link rel="stylesheet" href="/css/global/grid.css">
+  <link rel="stylesheet" href="/css/type/global.css">
+
+  <link rel="stylesheet" href="/css/container/container.css">
+
+  <link rel="stylesheet" href="/css/card/cardAccount.css">
+  <link rel="stylesheet" href="/css/card/cardProject.css">
+
+  <link rel="stylesheet" href="/css/array/item.css">
+
+  <link rel="stylesheet" href="/css/media/image.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png?">
+  <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon/favicon-32x32.png?">
+  <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon/favicon-16x16.png?">
+  <link rel="manifest" href="asset/favicon/site.webmanifest?">
+  <link rel="mask-icon" href="asset/favicon/safari-pinned-tab.svg?" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <script type="text/javascript">
+    // Fullscreen function for opening links
+    function fullScreen(theURL) {
+      window.open(theURL, '', 'fullscreen=yes, scrollbars=yes,location=yes,resizable=yes');
+    }
+  </script>
+</head>
+
+
+
+
+
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="figma">
+      <iframe 
+          width="100%" 
+          height="100%" 
+          src="https://embed.figma.com/design/dXb7SuHT3rQy6CbqFht60x/files.rw-TB-Brandhub?node-id=563-41728&embed-host=share&footer=false&hide-ui=true" 
+          allowfullscreen>
+        </iframe>
+      <!-- <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwHeqSHNyw9kfc2qmhYmgx3%2FPresentation_Portfolio_Book_Product%3Fpage-id%3D0%253A1%26node-id%3D54-59313%26viewport%3D-382%252C1163%252C0.04%26t%3DCYI0k8GX2veQgNa9-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D54%253A59313" allowfullscreen></iframe> -->
+    </div>
+    <!-- partial -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Function to apply display:none !important to matching classes
+          function hideElementsByClassPrefix(prefix) {
+              const elements = document.querySelectorAll(`[class^='${prefix}']`);
+              elements.forEach(element => {
+                  element.style.setProperty('display', 'none', '!important');
+              });
+          }
+
+          // Hide elements with classes starting with .embed_documentation_footer--documentationFooter
+          hideElementsByClassPrefix('embed_documentation_footer--documentationFooter');
+
+          // Hide elements with classes starting with .header--header
+          hideElementsByClassPrefix('header--header');
+      });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

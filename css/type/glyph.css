@@ -3,36 +3,201 @@
   box-sizing: border-box;
 }
 .glyph-logo-container.flat {
-  padding: 2.87px 0px 1px 0px;
+ padding: 1.91px 0px 0.67px 0px;
+  /* display: flex;
+  flex-direction: row;
+  gap: 0px; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  /* width: 30.3px; */
+  position: relative;
+}
+
+.glyph-logo-container.round {
+  padding: 1.41px 1px 0.15px 1px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.glyph-logo-container.top-round {
+  padding: 1.91px 0px 0.67px 0px;
+  position: relative;
+  overflow: visible;
+}
+
+.logo-chromeos {
+  flex-shrink: 0;
+  width: 22.44px;
+  height: 22.44px;
+  position: relative;
+  overflow: visible;
+}
+
+.logo-budget {
+  flex-shrink: 0;
+  width: 30px;
+  height: 21.42px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 46.51/32.13;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.logo-taco-bell {
+  margin-left: 1px;
+  flex-shrink: 0;
+  width: 24.12px;
+  height: 21.93px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 36.19/32.89;
+}
+
+.logo-ourrs {
+  flex-shrink: 0;
+  width: 21.37px;
+  height: 22.44px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 21.37/22.44;
+}
+
+.logo-neumad {
+  flex-shrink: 0;
+  width: 30.3px;
+  height: 21.42px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 30.3/21.42;
+}
+
+
+.glyph-logo-container-top-round,
+.glyph-logo-container-top-round * {
+  box-sizing: border-box;
+}
+.glyph-logo-container-top-round {
+  padding: 2.11px 1.5px 0.23px 1.5px;
   display: flex;
   flex-direction: row;
-  gap: 0px;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.logo-sea {
+  flex-shrink: 0;
+  width: 22.44px;
+  height: 22.44px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.logo-att {
+  flex-shrink: 0;
+  width: 22.44px;
+  height: 22.44px;
+  position: relative;
+  overflow: visible;
+}
+.logo-medialink {
+  margin-right: 1px;
+  margin-left: 3px;
+  flex-shrink: 0;
+  width: 22.31px;
+  height: 22.31px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  vertical-align: middle;
+}
+.logo-fsy {
+  margin-right: 1px;
+  margin-left: 3px;
+  flex-shrink: 0;
+  width: 22.31px;
+  height: 22.31px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.glyph-arrow,
+.glyph-arrow * {
+  box-sizing: border-box;
+}
+.glyph-arrow {
+  padding: 1.91px 0px 0.67px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.67px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.arrow-path {
+  flex-shrink: 0;
+  width: 21.42px;
+  height: 21.42px;
+  position: relative;
+  overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 45PX */
+.glyph-logo45-container,
+.glyph-logo45-container * {
+  box-sizing: border-box;
+}
+.glyph-logo45-container.flat {
+  padding: 2.87px 0px 0px 0px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
 }
 
-.glyph-logo-container.round {
+.glyph-logo45-container.round {
   padding: 2.11px 1.5px 0.23px 1.5px;
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
 }
-.glyph-logo-container.top-round {
+.glyph-logo45-container.top-round {
   padding: 2.11px 0px 1px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
   position: relative;
+  overflow: visible;
 }
 
-.logo-google {
+.logo45-google {
   flex-shrink: 0;
   width: 33.66px;
   height: 33.66px;
@@ -40,25 +205,28 @@
   overflow: visible;
 }
 
-.logo-budget {
+.logo45-budget {
+  margin-left: 1px;
   flex-shrink: 0;
   width: 46.51px;
   height: 32.13px;
   position: relative;
   overflow: visible;
   aspect-ratio: 46.51/32.13;
+  vertical-align: -webkit-baseline-middle;
 }
 
-.logo-taco-bell {
+.logo45-taco-bell {
+  margin-left: 1px;
   flex-shrink: 0;
-  width: 36.19px;
-  height: 32.89px;
+  width: 24.12px;
+  height: 21.93px;
   position: relative;
   overflow: visible;
-  aspect-ratio: 36.19/32.89;
+  aspect-ratio: 24.12/21.93;
 }
 
-.logo-ourrs {
+.logo45-ourrs {
   flex-shrink: 0;
   width: 32.05px;
   height: 33.66px;
@@ -67,32 +235,85 @@
   aspect-ratio: 32.05/33.66;
 }
 
-.logo-samsung {
+.glyph-logo45-container-top-round,
+.glyph-logo45-container-top-round * {
+  box-sizing: border-box;
+}
+.glyph-logo45-container-top-round {
+  padding: 2.11px 1.5px 0.23px 1.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.logo45-sea {
+  flex-shrink: 0;
   width: 33.66px;
   height: 33.66px;
   position: relative;
   overflow: visible;
   aspect-ratio: 1;
 }
-.logo-att {
+
+.logo45-att {
   flex-shrink: 0;
   width: 33.66px;
   height: 33.66px;
   position: relative;
   overflow: visible;
 }
-.logo-medialink {
+.logo45-medialink {
+  margin-left: 1px;
   flex-shrink: 0;
   width: 32.13px;
   height: 32.13px;
   position: relative;
   overflow: visible;
+  vertical-align: -webkit-baseline-middle;
 }
-.logo-fsy {
+.logo45-fsy {
+  margin-right: 1px;
+  margin-left: 3px;
   flex-shrink: 0;
   width: 32.13px;
   height: 32.13px;
   position: relative;
   overflow: visible;
   aspect-ratio: 1;
+  vertical-align: baseline;
+}
+
+
+
+
+
+
+
+
+
+
+.glyph-arrow45,
+.glyph-arrow45 * {
+  box-sizing: border-box;
+}
+.glyph-arrow45 {
+  padding: 2.87px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+
+.arrow45-path {
+  flex-shrink: 0;
+  width: 32.13px;
+  height: 32.13px;
+  position: relative;
+  overflow: visible;
 }

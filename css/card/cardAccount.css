@@ -1,0 +1,50 @@
+
+
+
+.item-account,
+.item-account * {
+  box-sizing: border-box;
+}
+.item-account {
+    border-radius: var(--r03);
+    padding: var(--s03);
+    background-color: var(--rws-bcg-e03, #1b2421);
+  gap: var(--s06);
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.company-name {
+  /* display: flex; */
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 136.66px;
+  height: 36px;
+  position: relative;
+}
+
+.account-name {
+  /* display: flex; */
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 36px;
+  position: relative;
+}
+.count {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 55px;
+  height: 32px;
+  position: relative;
+}

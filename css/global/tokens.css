@@ -2,16 +2,45 @@
     --color-main: #1B2421;
     --color-files: #E9AF19;
     --color-cases: #1B2421;
-    --color-books: #;
+    --rws-bcg-e03: #1B2421;
+    --rws-ink-p03: #1B2421;
+    --rws-ink-p06: #f6f6fb;
     
-    
-    
-    --gridGap: 15px;
+    --r00: 3px;
+    --r01: 5px;
+    --r02: 15px;
+    --r03: 30px;
+    --r04: 45px;
+    --r05: 60px;
+    --r06: 85px;
+    --r07: 100px;
+    --r08: 125px;
+
+    --s00: 3px;
+    --s01: 5px;
+    --s02: 10px;
+    --s03: 15px;
+    --s04: 20px;
+    --s05: 25px;
+    --s06: 30px;
+    --s07: 45px;
+    --s08: 50px;
+    --s09: 55px;
+    --s10: 60px;
+    --s11: 65px;
+    --s12: 70px;
+    --s13: 75px;
+    --s14: 80px;
+    --s15: 85px;
+    --s16: 90px;
+
+    --gap00: 3px;
+    --gap03: 15px;
     
     --text-font-family: HelveticaNeue-Medium, Helvetica, sans-serif;
     
-    --text01m-font-size: 90px;
-    --text02m-font-size: 45px;
+    --text01m-font-size: 60px;
+    --text02m-font-size: 30px;
     --text03m-font-size: 21px;
     --text04m-font-size: 15px;
     
@@ -19,15 +48,15 @@
     --text02m-font-weight: 500;
     --text03m-font-weight: 400;
     
-    --text01m-font-line-height: 90px;
-    --text02m-font-line-height: 36px;
-    --text03m-font-line-height: 10px;
+    --text01m-line-height: 90;
+    --text02m-line-height: 30;
+    --text03m-line-height: 10;
     
     --text01m-font-style: Medium;
     --text02m-font-style: Medium;
     --text03m-font-style: Medium;
     
-    --text01m-font-letter-spacing: 0.06pt;
-    --text02m-font-letter-spacing: 0.03pt;
-    --text03m-font-letter-spacing: 0.03pt;
+    --text01m-letter-spacing: -0.93pt;
+    --text02m-letter-spacing: -0.63pt;
+    --text03m-letter-spacing: 0.03pt;
   }

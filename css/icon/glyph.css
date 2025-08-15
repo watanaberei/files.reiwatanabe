@@ -1,0 +1,28 @@
+.logo-att {
+    flex-shrink: 0;
+    width: 33.66px;
+    height: 33.66px;
+    position: relative;
+    overflow: visible;
+  }
+  .att {
+    color: var(--dark-rws-ink-p06, #f6f6fb);
+    text-align: left;
+    font-family: "HelveticaNeue-Medium", sans-serif;
+    font-size: 45px;
+    line-height: 36px;
+    letter-spacing: 0undefined;
+    font-weight: 500;
+    position: relative;
+  }
+  .low-midfunnel {
+    color: var(--dark-rws-ink-p06, #f6f6fb);
+    text-align: left;
+    font-family: "HelveticaNeue-Medium", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -0.015em;
+    font-weight: 500;
+    position: relative;
+  }
+  

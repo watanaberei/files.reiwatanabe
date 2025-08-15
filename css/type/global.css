@@ -1,0 +1,29 @@
+.left {
+    text-align: start;
+    justify-content: left;
+    left: 0;
+}
+
+.right {
+    text-align: end;
+    justify-content: right;
+    right: 0;
+    
+}
+
+.centerH {
+    text-align: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+}
+
+.centerV {
+    align-items: center;
+    justify-content: center;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column !important;
+}

@@ -1,18 +1,24 @@
   /*/// GRID ///*/
-  .grid03 {
-    box-sizing: border-box;
-    display: grid !important
-;
-    grid-template-columns: repeat(150px, 3fr) !important;
-    gap: var(--gridGap) !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
+.grid02 {
+  box-sizing: border-box;
+  display: grid !important;
+  grid-template-columns: repeat(150px, 3fr) !important;
+  gap: var(--gap00) !important;
+  grid-template-columns: 1fr 1fr !important;
+} 
+.grid03 {
+  box-sizing: border-box;
+  display: grid !important;
+  grid-template-columns: repeat(150px, 3fr) !important;
+  gap: var(--gap00) !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
 } 
 .grid04 {
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr;
     grid-auto-columns: 100% !important;
-    gap: var(--gridGap) !important;
+    gap: var(--gap00) !important;
     grid-template-columns: repeat(4, 1fr);
 }
 .grid06 {
@@ -20,7 +26,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-auto-columns: 100% !important;
-    gap: var(--gridGap) !important;
+    gap: var(--gap00) !important;
     grid-template-columns: repeat(6, 1fr);
 }
 .grid > .item {
@@ -39,7 +45,7 @@
 .span02, .col02 { box-sizing: border-box; display: grid; grid-column: span 2  !important; grid-template-columns: 2fr;}
 .span03, .col03 { box-sizing: border-box; display: grid; grid-column: span 3  !important; grid-template-columns: 3fr;}
 .span04, .col04 { box-sizing: border-box; display: grid; grid-column: span 4  !important; }
-.row01  { box-sizing: border-box; display: grid ; grid-row: span 1; !important}
-.row02  { box-sizing: border-box; display: grid ; grid-row: span 2; !important}
+.row01  { box-sizing: border-box; display: grid ; grid-row: span 1 !important;}
+.row02  { box-sizing: border-box; display: grid ; grid-row: span 2 !important;}
  .col05 { box-sizing: border-box; display: grid; grid-column: span 5  !important; grid-template-columns: 5fr;}
 .span06, .col06 { box-sizing: border-box; display: grid; grid-column: span 6  !important; grid-template-columns: 6fr;}
