@@ -1,23 +1,4 @@
 // /projectData.js
-// Nested structure: accountName -> projectName -> fields
-
-
-
-
-// /projectData.js
-// Top-level keys are accountIds. Each account holds any number of projects.
-// Fields renamed to accountId (was companyId).
-
-// accountId:
-    // projectId:
-    // type:
-    // category:
-    // accountName:
-    // projectName: 
-    // projectDescription:
-    // fileKey:
-    // fileName:
-    // attributes:
 
 export const projectData = {
   ATT: {
@@ -48,6 +29,68 @@ export const projectData = {
     }
   },
 
+
+  
+  Ourrs: {
+    "Ecommerce": {
+      accountId: "Ourrs",
+      projectId: "Ecommerce",
+      type: "design",
+      category: "Working File",
+      accountName: "Ourrs",
+      projectName: "Ecommerce",
+      projectDescription: "Ecommerce",
+      fileKey: "4V95AGqunAQzgrS48AT3mw",
+      fileName: "discovery.html",
+      attributes: ["Systems", "Docs", "Exploration"],
+    },
+    "Prototype": {
+      accountId: "Ourrs",
+      projectId: "Prototype",
+      type: "prototype",
+      category: "Demo",
+      accountName: "Ourrs",
+      projectName: "Prototype",
+      projectDescription: "Prototype",
+      fileKey: "4V95AGqunAQzgrS48AT3mw",
+      fileName: "discovery.html",
+      attributes: ["Systems", "Docs", "Exploration"],
+    }
+  },
+
+
+
+  
+  SEA: {
+    "Toolkit": {
+      accountId: "SEA",
+      projectId: "Toolkit",
+      type: "design",
+      category: "Working File",
+      accountName: "Samsung",
+      projectName: "CRM Toolkit",
+      projectDescription: "Building tool to build Samsung CRM",
+      fileKey: "4V95AGqunAQzgrS48AT3mw",
+      fileName: "discovery.html",
+      attributes: ["Systems", "Docs", "Exploration"],
+    }
+  },
+
+
+  FSY: {
+    "Booking": {
+      accountId: "FSY",
+      projectId: "Booking",
+      type: "design",
+      category: "Working File",
+      accountName: "FSY",
+      projectName: "Self-Booking",
+      projectDescription: "Designing Four Seasons Yatch’s first Self Booking experiences",
+      fileKey: "4V95AGqunAQzgrS48AT3mw",
+      fileName: "discovery.html",
+      attributes: ["Systems", "Docs", "Exploration"],
+    }
+  },
 
 
   ChromeOS: {
@@ -107,71 +150,8 @@ export const projectData = {
   },
 
 
-  
-  SEA: {
-    "Toolkit": {
-      accountId: "SEA",
-      projectId: "Toolkit",
-      type: "design",
-      category: "Working File",
-      accountName: "Samsung",
-      projectName: "CRM Toolkit",
-      projectDescription: "Building tool to build Samsung CRM",
-      fileKey: "4V95AGqunAQzgrS48AT3mw",
-      fileName: "discovery.html",
-      attributes: ["Systems", "Docs", "Exploration"],
-    }
-  },
-
-
-  
-  Ourrs: {
-    "Ecommerce": {
-      accountId: "Ourrs",
-      projectId: "Ecommerce",
-      type: "design",
-      category: "Working File",
-      accountName: "Ourrs",
-      projectName: "Ecommerce",
-      projectDescription: "Ecommerce",
-      fileKey: "4V95AGqunAQzgrS48AT3mw",
-      fileName: "discovery.html",
-      attributes: ["Systems", "Docs", "Exploration"],
-    },
-    "Prototype": {
-      accountId: "Ourrs",
-      projectId: "Prototype",
-      type: "prototype",
-      category: "Demo",
-      accountName: "Ourrs",
-      projectName: "Prototype",
-      projectDescription: "Prototype",
-      fileKey: "4V95AGqunAQzgrS48AT3mw",
-      fileName: "discovery.html",
-      attributes: ["Systems", "Docs", "Exploration"],
-    }
-  },
-
-
-
-  FSY: {
-    "Booking": {
-      accountId: "FSY",
-      projectId: "Booking",
-      type: "design",
-      category: "Working File",
-      accountName: "FSY",
-      projectName: "Self-Booking",
-      projectDescription: "Designing Four Seasons Yatch’s first Self Booking experiences",
-      fileKey: "4V95AGqunAQzgrS48AT3mw",
-      fileName: "discovery.html",
-      attributes: ["Systems", "Docs", "Exploration"],
-    }
-  },
-
-
   ABG: {
-    "Parenting System": {
+    "Design System": {
       accountId: "ABG",
       projectId: "Parenting-System",
       type: "design",
@@ -183,7 +163,7 @@ export const projectData = {
       fileName: "discovery.html",
       attributes: ["Systems", "Docs", "Exploration"],
     },
-    "Redesigns": {
+    "Redesign": {
       accountId: "ABG",
       projectId: "Redesigns",
       type: "design",
@@ -195,24 +175,7 @@ export const projectData = {
       fileName: "discovery.html",
       attributes: ["Systems", "Docs", "Exploration"],
     }
-
-          
-
-  Medialink: {
-    "Live": {
-      accountId: "Medialink",
-      projectId: "Live",
-      type: "prototype",
-      category: "Casestudy",
-      accountName: "Medialink",
-      projectName: "Live",
-      projectDescription: "Live streaming for agencies, hosted by agencies",
-      fileKey: "4V95AGqunAQzgrS48AT3mw",
-      fileName: "discovery.html",
-      attributes: ["Systems", "Docs", "Exploration"],
-    }
   },
-
 
 
   Neumad: {
@@ -247,10 +210,13 @@ export const projectData = {
     }
   },
 
-    
+  
+
+
+
+
+  // Add more accounts/projects freely; the container is fully dynamic.
 };
-
-
 
 
 
