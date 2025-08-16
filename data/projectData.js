@@ -210,12 +210,8 @@ export const projectData = {
     }
   },
 
+
   
-
-
-
-
-  // Add more accounts/projects freely; the container is fully dynamic.
 };
 
 
