@@ -86,10 +86,10 @@ export const ContainerAccount = {
               </div>
             </div>
             -->
-            <div class="reimagining col01 right">
-            <span class="text02">
-            ${String(entries.length).padStart(2, '0')}
-            </span>
+            <div class="header-subtitle-primary col01 grid02 right">
+              <span class="text02">
+              ${String(entries.length).padStart(2, '0')}
+              </span>
             </div>
           </div>
 
