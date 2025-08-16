@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="./css/screen/work.css">
 
+  <link rel="stylesheet" href="./css/erßror/viewport.css">
+
   <link rel="stylesheet" href="./css/utility/tooltip.css">
 
   <link rel="stylesheet" href="./css/type/text.css">
@@ -50,140 +52,48 @@
 </head>
 <body>
 
-<div class="main">
+  <div class="main">
 
-  <!-- <div class="row bottom"> -->
+    <!-- <div class="row bottom"> -->
 
-    
       
-      
-      <div class="main grid04">
-
-        <div class="container headline col04 row01 grid04">
-          
-          <div class="text col02">
-            <span class="text02">
-              Files
-            </span>
-          </div>
-          <!-- <div class="subtext col02">
-            <span class="text02">
-              rws
-            </span>
-          </div> -->
         
+        
+        <div class="main grid04">
+
+          <div class="container headline col04 row01 grid04">
+            
+            <div class="text col02">
+              <span class="text02">
+                Files
+              </span>
+            </div>
+            <!-- <div class="subtext col02">
+              <span class="text02">
+                rws
+              </span>
+            </div> -->
+          
+          </div>
+
+          <!-- Container for dynamically rendered ComponentCards -->
+          <div class="container project col04 row01 grid04" id="project-cards-container">
+            <!-- ComponentCards will be injected here by JS -->
+          </div>
+
+          <!-- The rest of the static links remain unchanged -->
+          <div class="container signature col04 row01 grid04">
+            <a href="reiwatanabe.com" class="signature-text col02">
+              <span class="text02">
+                Files — Rei Watanabe
+              </span>
+            </a>
+          </div>
+
         </div>
+    
+    </div>
 
-        <!-- Container for dynamically rendered ComponentCards -->
-        <div class="container project col04 row01 grid04" id="project-cards-container">
-          <!-- ComponentCards will be injected here by JS -->
-        </div>
-
-        <!-- The rest of the static links remain unchanged -->
-        <div class="container signature col04 row01 grid04">
-          <a href="reiwatanabe.com" class="signature-text col02">
-            <span class="text02">
-              Files — Rei Watanabe
-            </span>
-          </a>
-        </div>
-
-      </div>
-  
-  <!-- </div> -->
-  
-</div>
-
-<!-- 
-  The following is commented out legacy content.
-  No changes made here.
--->
-
-<!-- </div>
-  <div class="row">
-    <div class="column">
-      <h1>
-        Multidisciplinary Product Designer
-      </h1>
-      <h1>I am passionate about designs that solve complex issues. My obsessions are centered around creating user centric, intuitive, and holistic products that are unified across its brand / experience / and interface.
-      </h1>
-      <h1>
-        <span>
-        For availability, email 
-        <button onclick="copy('to.reiwatanabe@gmail.com')">
-          <span id="sample">to.reiwatanabe@gmail.com
-           
-            <svg width="34.5" height="34.5" viewBox="0 0 34.5 34.5" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2028 6.34814V21.8473H18.3204V27.7509H2.82129V12.2517H8.70361V6.34814H24.2028ZM15.796 19.3229H11.228L11.2259 8.87268H21.6783V19.3229H18.3204V19.3229H15.796V19.3229ZM15.796 21.8473V25.2265H5.34571L5.34362 14.7762H8.70361V21.8473H15.796Z" />
-            </svg>
-          </span>
-        </button>
-        <!-- /
-        <a href="https://www.linkedin.com/in/reiwatanabe/"  target="_blank">Linkedin</a>
-        </span> -->
-
-    <!-- </div>
-  </div> -->
-
-<!-- JS SCRIPTS -->
-
-<!-- <script type="module" src="./components/components.js"></script> -->
-
-<!-- <script type="text/javascript">
-  // =========================
-  // Render ComponentCards from @componentCard.js using data from @projects.js
-  // =========================
-
-  // Console log for debugging
-  console.log('[index.html][line ~160] - Attempting to render ComponentCards from cardData');
-
-  // Wait for DOM to be ready
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check if ComponentCard and cardData are loaded
-    if (typeof ComponentCard === 'undefined') {
-      console.error('[index.html][line ~165] - ComponentCard is not defined');
-      return;
-    }
-    if (typeof cardData === 'undefined') {
-      console.error('[index.html][line ~168] - cardData is not defined');
-      return;
-    }
-
-    // Get the container for the cards
-    var container = document.getElementById('project-cards-container');
-    if (!container) {
-      console.error('[index.html][line ~173] - #project-cards-container not found');
-      return;
-    }
-
-    // Render each card from cardData
-    cardData.forEach(function(card, idx) {
-      // Console log each card for debugging
-      console.log('[index.html][line ~179] - Rendering card', idx, card);
-
-      // Defensive: check required fields
-      var companyId = card.companyId || '';
-      var projectId = card.projectId || '';
-      var type = card.type || '';
-      var tags = card.attributes || [];
-      var link = card.link || '';
-
-      // Render the card using ComponentCard.render
-      var cardHTML = ComponentCard.render(companyId, projectId, type, tags, link);
-
-      // Create a wrapper div for each card
-      var cardDiv = document.createElement('div');
-      cardDiv.className = 'project-card-wrapper';
-      cardDiv.innerHTML = cardHTML;
-
-      // Append to container
-      container.appendChild(cardDiv);
-    });
-
-    // Console log after rendering
-    console.log('[index.html][line ~196] - Finished rendering all ComponentCards');
-  });
-</script> -->
-
-</body>
+    <script src="./function/view/viewport.js"></script>
+  </body>
 </html>
