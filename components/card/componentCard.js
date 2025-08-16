@@ -21,18 +21,19 @@ function renderGlyph(accountId) {
 }
 
 export const ComponentCard = {
-  render(accountId, projectId, accountName, projectName) {
+  render(accountId, projectId, publicView = 'on', accountName = '', projectName = '') {
     const aid = String(accountId || '').trim();
     const pid = String(projectId || '').trim();
+    const aName = accountName || aid;
+    const pName = projectName || pid;
     const arrow = Glyphs.glyphArrow.render();
 
-    // If your route differs, update this:
+    const glyphHTML = renderGlyph(aid);
     const href = `./screens/${aid}/${pid}.html`;
 
-    const glyphHTML = render.renderGlyph(aid);
-
-    return `
-      <a href="javascript:void(0);" id="${aid}-${pid}" onclick="fullScreen('${href}');" class="item grid04 col04 row01">
+    // Card body (shared)
+    const body = `
+      <div class="item grid04 col04 row01">
         <div class="content">
           <div class="title stack">
             <div class="title-container">
@@ -51,15 +52,37 @@ export const ComponentCard = {
               <span class="text02">${projectName}</span>
             </span>
 
+            ${publicView === 'off' ? `<span class="text02 warning"> Coming Soon</span>` : ``}
+
+          
+
+            
+
             <span class="glyph glyph-arrow flat">
               ${arrow}
             </span>
+
           </div>
+          
         </div>
         <div class="image thumbnail">
           <img src="/asset/media/thumbnail/${aid}/${pid}.png" alt="${pid}">
         </div>
-      </a>
+      </div>
+    `;
+    // Strict link gating
+    if (publicView === 'on') {
+      return `
+         <a href="javascript:void(0);" id="${aid}-${pid}" onclick="fullScreen('${href}');" class="item grid04 col04 row01">
+          ${body}
+        </a>
+      `;
+    }
+    // Non-clickable version
+    return `
+      <div  class="item grid04 col04 row01">
+        ${body}
+      </div>
     `;
   }
 };

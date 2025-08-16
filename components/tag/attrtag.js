@@ -129,28 +129,6 @@ export const attrtagFootnote = {
   }
 };
 
-// export const attrtagItem = {
-//   render: (data) => {
-//     // const category = data.category;
-//     return `
-//       <button class="attrtag tag">
-//         <div class="attrtag tag">
-//           <div class="rank">
-//             <i class="glyph glyph-pound"></i>
-//             <span class="count label">${data.rank}</span>
-//           </div>
-//           <div class="label">
-//             <span class="label">${data.name}</span>
-//           </div>
-//           <div class="icon">
-//             ${ glyph.glyphActionArrow}
-//           </div>
-//         </div>
-//       </button>
-//     `;
-//   }
-// };
-
 // Updated attrtagSource component
 export const attrtagSource = {
   render: (data) => {
@@ -175,21 +153,6 @@ export const attrtagSource = {
   }
 };
 
-// export const attrtagSource = {
-//   render: (data) => {
-//     // const category = data.category;
-//     return `
-//       <button class="attrtag tag">
-//         <div class="attrtag tag">
-//           <div class="logo">
-//             <img src="${data.partnerLogo}" alt="Partner logo" class="partner-logo-thumbnail" width="15" height="15">
-//           </div>
-//         </div>
-//       </button>
-//     `;
-//   }
-// };
-
 // Add event listeners for all attrtags
 document.addEventListener("DOMContentLoaded", () => {
   // Handle attrtag clicks
@@ -210,63 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-// export const attrtagScore = {
-//   render: (data) => {
-//     console.log('attrtagScore render called with:', data);
-//     const getStatsScore = Function.getStatsScore;
-//     const tags = data.tags || [];
-//     return `
-//       ${tags.map(tag => {
-//         const tagScoreResult = getStatsScore(tag.score);
-//         console.log('Tag score result:', tagScoreResult);
-        
-//         return `
-//           <button id="score" class="attrtag tag" data-name="value" data-score="${tag.score}">
-//             ${Function.getStatsScore(tag.score)}
-//             <div class="single-icon">
-//               ${tagScoreResult.icons[tagScoreResult.currentScore]?.icon || ''}
-//             </div>
-//             <div class="label">
-//               <span class="text02">${tag.label}</span>
-//             </div>
-//           </button>
-//         `;
-//       }).join('')}
-//     `;
-//   },
-//   afterRender: () => {
-//     console.log('debug log: storeLocation11 - Running afterRender');
-   
-//     // Existing attrtag button handlers
-//     const attrtagButtons = document.querySelectorAll('#score.attrtag.tag');
-//     console.log('debug log: storeLocation12 - Found attrtag buttons:', attrtagButtons.length);
-   
-//     attrtagButtons.forEach(button => {
-//       button.addEventListener('mouseenter', (e) => {
-//         button.classList.add('hovered');
-//       });
-//       button.addEventListener('mouseleave', (e) => {
-//         button.classList.remove('hovered');
-//       });
-     
-//       const scoreIcons = button.querySelectorAll('.score-icon');
-//       console.log('debug log: storeLocation13 - Score icons for button:', scoreIcons.length);
-     
-//       scoreIcons.forEach(icon => {
-//         icon.addEventListener('click', (e) => {
-//           e.stopPropagation();
-//           const newScore = parseInt(icon.getAttribute('data-score'));
-//           button.setAttribute('data-score', newScore);
-//           scoreIcons.forEach((si, index) => {
-//             si.classList.toggle('active', index <= newScore);
-//           });
-//           button.classList.add('selected');
-//           button.querySelector('.single-icon').innerHTML = icon.innerHTML;
-//         });
-//       });
-//     });
-//  }};
 
 export const attrtagMore = {
   render: (data) => {
@@ -299,15 +205,3 @@ export const attrtagMore = {
             `;
   }
 };
-
-// export const attrtagStatus = {
-//   render: (data) => {
-//     const icon = glyph.glyphDetailPrice;
-//     const status = data.status;
-//     return `
-//       <button class="attrtag tag">
-//         <span class="label">Now: ${status}</span>
-//       </button>
-//     `;
-//   }
-// };

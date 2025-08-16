@@ -1,18 +1,3 @@
-// ContainerProject groups a company's projects and renders a header + its cards.
-//
-// Usage:
-//   import { ContainerProject } from '../container/containerProject.js'
-//   const html = ContainerProject.render({ companyId: 'ATT', projects: projectData.ATT })
-//
-// It expects your data shape:
-// projectData = {
-//   ATT: {
-//     "Low-Midfunnel": {...},
-//     "Case Study": {...}
-//   },
-//   ChromeOS: { ... }
-// }
-
 // /components/containerAccount.js
 // Renders one account container with a dynamic number of projects.
 // DOM/class names MUST match your CSS exactly.
@@ -21,9 +6,10 @@ import { ComponentCard } from '../card/componentCard.js';
 import * as render from '../../function/render/render.js';
 
 /** Small subcomponent for the count badge/slot */
-const AccountCount = {
+/** tiny subcomponent for the count slot */
+const ProjectCount = {
   render(n = 0) {
-    const count = String(n).padStart(2, '0'); // e.g., "02"
+    const count = String(n).padStart(2, '0'); // "02", "12", etc.
     return `<div class="project-count"><span class="text02">${count}</span></div>`;
   }
 };
@@ -34,23 +20,39 @@ export const ContainerAccount = {
    * @param {string} opts.accountId
    * @param {Object<string, Object>} opts.projects - projectData[accountId]
    */
-  render({ accountId = '', projects = {} } = {}) {
-    const aid = String(accountId).trim();
-    const entries = Object.entries(projects || {});
-    if (!aid || entries.length === 0) return '';
+    render({ accountId = '', projects = {} } = {}) {
+      const aid = String(accountId || '').trim();
+      const entries = Object.entries(projects || {});
+      if (!aid || entries.length === 0) return '';
+  
 
-    // Use accountName for header, projectName for subtitle
-    const firstMeta = entries[0]?.[1] || {};
-    const AccountName = firstMeta.accountName || aid;
-    const ProjectName = firstMeta.projectName || 'Reimagining';
+   // Header values
+   const firstMeta   = entries[0]?.[1] || {};
+   const AccountName = firstMeta.accountName || aid;
+   const ProjectName = firstMeta.projectName || 'WIP';
     const projectCount = entries.length;
+
+    // Build cards and PASS NORMALIZED VALUES
+    const projectItems = entries.map(([projectKey, meta]) => {
+      const pid         = String((meta && meta.projectId) || projectKey).trim();
+      const projectName = String((meta && meta.projectName) || pid).trim();
+      const accountName = String((meta && meta.accountName) || aid).trim();
+
+      // normalize publicView to 'on' | 'off'
+      const pvRaw = (meta && meta.publicView) ?? 'on';
+      const publicView = String(pvRaw).trim().toLowerCase(); // 'on' | 'off'
+
+      return ComponentCard.render(aid, pid, publicView, accountName, projectName);
+    }).join('');
 
     const glyphHTML = render.renderGlyph  (aid);
     
-    const projectItems = entries.map(([projectKey, meta]) => {
-      const pid = (meta && meta.projectId) || projectKey;
-      return ComponentCard.render(aid, pid, meta.accountName, meta.projectName);
-    }).join('');
+    // build cards (pass publicView through)
+    // const projectItems = entries.map(([projectKey, meta]) => {
+    //   const pid        = (meta && meta.projectId) || projectKey;
+    //   const publicView = (meta && meta.publicView) || 'on';
+    //   return ComponentCard.render(aid, pid, publicView);
+    // }).join('');
 
 
     // EXACT DOM you asked for (account version)
@@ -75,6 +77,7 @@ export const ContainerAccount = {
           </div>
        
           <div class="header-subtitle grid02 col02 row01">
+            <!--
             <div class="account-name text left col01">
               <div class="reimagining">
                 <span class="text02">
@@ -82,15 +85,18 @@ export const ContainerAccount = {
                 </span>
               </div>
             </div>
+            -->
             <div class="reimagining col01 right">
-              ${AccountCount.render(projectCount)}
+            <span class="text02">
+            ${String(entries.length).padStart(2, '0')}
+            </span>
             </div>
           </div>
 
         </div>
       
         <div class="container items col04 row01 grid04">
-          ${projectItems}
+        ${projectItems}
         </div>
 
 
