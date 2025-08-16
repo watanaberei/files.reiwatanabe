@@ -59,7 +59,7 @@
         place-items: center;
         height: 100vh;
         width: 100vw;
-        background-color: var(--rws-bcg-files);
+        background-color: var(--rws-bcg-files, #E9AF19);
       }
       #viewport-guard .viewport-guard-backdrop{
         position:absolute;
@@ -74,11 +74,11 @@
         min-height:180px;
         width: 90vw;
         height: 100vh;
-        font-size: var(--text06m-font-size);
-        font-weight: var(--text06m-font-style);
-        line-height: calc( var(--text06m-line-height) / 40 );
-        letter-spacing: var(--text06m-letter-spacing);
-        color: var(--rws-warning);
+        font-size: var(--text06m-font-size, 10);
+        font-weight: var(--text06m-font-style, 700);
+        line-height: calc( var(--text06m-line-height, 10) / 40 );
+        letter-spacing: var(--text06m-letter-spacing, 0.03);
+        color: var(--rws-warning, #E94523);
         overflow:hidden; /* keep the text inside for bounce */
         cursor:default;
       }
