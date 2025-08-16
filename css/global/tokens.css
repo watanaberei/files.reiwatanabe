@@ -7,7 +7,8 @@
     --rws-ink-p06: #f6f6fb;
     --rws-ink-e06: #151615;
     --rws-warning: #E94523;
-    
+    --rws-bcg-files: #E9AF19;
+
     --r00: 3px;
     --r01: 5px;
     --r02: 15px;
@@ -45,20 +46,34 @@
     --text02m-font-size: 30px;
     --text03m-font-size: 21px;
     --text04m-font-size: 15px;
+    --text05m-font-size: 12px;
+    --text06m-font-size: 10px;
     
     --text01m-font-weight: 400;
     --text02m-font-weight: 500;
     --text03m-font-weight: 400;
+    --text04m-font-weight: 400;
+    --text05m-font-weight: 400;
+    --text06m-font-weight: 700;
     
     --text01m-line-height: 90;
     --text02m-line-height: 30;
     --text03m-line-height: 10;
+    --text04m-line-height: 10;
+    --text05m-line-height: 10;
+    --text06m-line-height: 10;
     
     --text01m-font-style: Medium;
     --text02m-font-style: Medium;
     --text03m-font-style: Medium;
+    --text04m-font-style: Medium;
+    --text05m-font-style: Medium;
+    --text06m-font-style: Bold;
     
     --text01m-letter-spacing: -0.93pt;
     --text02m-letter-spacing: -0.63pt;
     --text03m-letter-spacing: 0.03pt;
+    --text04m-letter-spacing: 0.03pt;
+    --text05m-letter-spacing: 0.03pt;
+    --text06m-letter-spacing: 0.03pt;
   }
