@@ -74,10 +74,10 @@
         min-height:180px;
         width: 90vw;
         height: 100vh;
-        font-size: var(--text06m-font-size, 10);
-        font-weight: var(--text06m-font-style, 700);
-        line-height: calc( var(--text06m-line-height, 10) / 40 );
-        letter-spacing: var(--text06m-letter-spacing, 0.03);
+        font-size: var(--text02m-font-size, 10);
+        font-weight: var(--text02m-font-style, 700);
+        line-height: calc( var(--text02m-line-height, 10) / 40 );
+        letter-spacing: var(--text02m-letter-spacing, 0.03);
         color: var(--rws-warning, #E94523);
         overflow:hidden; /* keep the text inside for bounce */
         cursor:default;

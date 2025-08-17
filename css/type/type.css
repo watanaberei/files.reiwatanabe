@@ -24,6 +24,27 @@
   letter-spacing: var(--text03m-letter-spacing);
 }
 
+.text04 {
+  font-size: var(--text04m-font-size);
+  font-weight: var(--text04m-font-style);
+  line-height: calc( var(--text04m-line-height) / 40 );
+  letter-spacing: var(--text04m-letter-spacing);
+}
+
+.text05 {
+  font-size: var(--text05m-font-size);
+  font-weight: var(--text05m-font-style);
+  line-height: calc( var(--text05m-line-height) / 40 );
+  letter-spacing: var(--text05m-letter-spacing);
+}
+
+.text06 {
+  font-size: var(--text06m-font-size);
+  font-weight: var(--text06m-font-style);
+  line-height: calc( var(--text06m-line-height) / 40 );
+  letter-spacing: var(--text06m-letter-spacing);
+}
+
 .light {
   font-weight: 300 !important;
   font-style: light !important;
