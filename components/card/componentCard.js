@@ -50,9 +50,14 @@ export const ComponentCard = {
             
             <span class="text title-project">
               <span class="text02">${projectName}</span>
+              ${publicView === 'off' ? `
+                <span class="text02 warning">
+                 Coming Soon
+                </span>
+                ` : ``}
             </span>
 
-            ${publicView === 'off' ? `<span class="text02 warning"> Coming Soon</span>` : ``}
+            
 
           
 
