@@ -56,10 +56,10 @@ shown on .item: hover) */
 
 
 /* Image lazy placeholder on the wrapper .image */
-.image.thumb-loading {
+img.thumb-loading {
   background:  var(--rw-files) center / cover no-repeat;
 }
-.image.thumb-loaded {
+img.thumb-loaded {
   background:  none;
 }
 
@@ -114,4 +114,20 @@ shown on .item: hover) */
 .is-in.anim-account {
     /* background-color: var(--account-tint, rgba(255, 213, 74, .08)); */
     background-color: var(--rws-ink-e03);
+}
+
+
+
+
+
+@keyframes rw-container {
+    0% { transform: translateY(50px);}
+    100% {
+        transform: translateY(1500px);
+    }
+}
+
+
+.container {
+    animation: rw-container 1s ease-in-out;
 }

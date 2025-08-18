@@ -13,7 +13,9 @@ ATT: {
     fileKey: "11dDn02IJv75bAJC1L2hGu",
     fileName: "low-midfunnel.html",
     publicView: "on",
-    attributes: ["Midfunnel", "UX/UI", "CMS", "Strategy"],    // optional display name
+    attributes: ["UX/UI", "Web", "Audit"],    // optional display name
+    discipline: ["UX/UI", "Web", "Audit"],
+    brandColor: "#00A8E0",
   },
   "Casestudy": {
     accountId: "ATT",
@@ -26,7 +28,9 @@ ATT: {
     fileKey: "11dDn02IJv75bAJC1L2hGu",
     fileName: "casestudy.html",
     publicView: "on",
-    attributes: ["Case Study", "UX/UI"]
+    attributes: ["Casestudy", "Process", "Audit"],    // optional display name
+    discipline: ["UX/UI", "Web", "Audit"],
+    brandColor: "#00A8E0",
     // accountName/groupTitle optional; will inherit from the first project if omitted
   }
 },
@@ -45,7 +49,9 @@ Ourrs: {
     fileKey: "4V95AGqunAQzgrS48AT3mw",
     fileName: "discovery.html",
     publicView: "on",
-    attributes: ["Systems", "Docs", "Exploration"],
+    attributes: ["Personal Project", "Startup", "Home Goods"],    // optional display name
+    discipline: ["Ecommerce", "Pitch", "Prototype"],
+    brandColor: "#00A8E0",
   },
   "Prototype": {
     accountId: "Ourrs",
@@ -122,7 +128,7 @@ FSY: {
 ChromeOS: {
   "Dev-Log": {
     accountId: "ChromeOS",
-    projectId: "Dev-Log",
+    projectId: "Dev",
     type: "design",
     category: "Working File",
     accountName: "ChromeOS",
