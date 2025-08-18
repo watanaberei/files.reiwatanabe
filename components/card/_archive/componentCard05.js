@@ -54,37 +54,62 @@ export const ComponentCard = {
 
     const body = `
       <div class="content">
-        <div class="stack">
-          <div class="title">
+        <div class="title">
 
 
-            <span class="text text-logo title-account">
-              <div class="logo-slot">
-                ${glyphHTML}
-              </div>
-              <span class="text02 divider light">
-              ${dash}
-              </span>
-              
+          <span class="text text-logo title-account">
+            <div class="logo-slot">
+              ${glyphHTML}
+            </div>
+            <span class="text02 divide light">
+            ${dash}
             </span>
+            
+          </span>
+          <span class="title-project">
+            <span class="text02 anim-text">
+              ${pName}
+            </span>
+            <span class="glyph glyph-arrow flat">
+                ${arrow}
+            </span>
+          </span>
+
+
+          <!--
+          <span class="title-account">
+            <div class="logo-slot">
+              ${glyphHTML}
+            </div>
+            
+            
+              <span class="text02 divide light">
+                :
+              </span>
+            
             <span class="title-project">
-              <span class="text02 anim-text">
+              <span class="text02">
                 ${pName}
               </span>
               <span class="glyph glyph-arrow flat">
-                  ${arrow}
+                ${arrow}
               </span>
             </span>
-          </div>
-
-
-          <div class="subtitle">
-            ${publicView === 'off' ? `
-              <span class="text02 warning">
-                Coming Soon
-              </span>
-              ` : ``}
-          </div>
+          </span>
+          -->
+          <!--
+            <span class="divider">
+              <span class="text02 regular">: </span>
+            </span>
+            <span class="title-project">
+              <span class="text02">${pName}</span>
+            </span>
+          -->
+          ${publicView === 'off' ? `
+            <span class="text02 warning">
+              Coming Soon
+            </span>
+            ` : ``}
         </div>
       </div>
       <div class="image">

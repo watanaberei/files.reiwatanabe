@@ -1,8 +1,8 @@
-.item-company,
-.item-company * {
+/* .item-account,
+.item-account * {
   box-sizing: border-box;
 }
-.item-company {
+.item-account {
   background: var(--dark-rws-bcg-e03, #1b2421);
   border-radius: 30px;
   padding: 30px;
@@ -13,7 +13,7 @@
   justify-content: flex-start;
   position: relative;
 }
-.company-name {
+.account-name {
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -21,7 +21,7 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-}
+} */
 /* .glyph-logo-container-round {
   padding: 2.11px 1.5px 0.23px 1.5px;
   display: flex;
@@ -43,7 +43,7 @@
   letter-spacing: -4px;
 } */
 
-
+/* 
 .div {
   color: var(--dark-rws-ink-p06, #f6f6fb);
   text-align: left;
@@ -53,8 +53,8 @@
   letter-spacing: -0.015em;
   font-weight: 500;
   position: relative;
-}
-.title-project {
+} */
+/* .title-project {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -62,4 +62,4 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-}
+} */

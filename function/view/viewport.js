@@ -2,8 +2,8 @@
 // - Desktop: text follows cursor
 // - Mobile: text bounces like the old screensaver
 (() => {
-  const MIN_W = 1200;
-  const MIN_H = 900;
+  const MIN_W = 1050;
+  const MIN_H = 450;
 
   const log = (...a) => console.log('[ViewportGuard]', ...a);
 
@@ -14,12 +14,13 @@
     return mobileUA || iPadOS;
   }
 
+  // Return one of: 'mobile' | 'w' | 'h' | null
   function violation() {
     const w = window.innerWidth;
     const h = window.innerHeight;
-    const mobile = isMobile();
-    if (mobile) return 'mobile';
-    if (w < MIN_W || h < MIN_H) return 'small';
+    if (isMobile()) return 'mobile';
+    if (w < MIN_W) return 'w';
+    if (h < MIN_H) return 'h';
     return null;
   }
 
@@ -34,7 +35,7 @@
       <div class="viewport-guard-backdrop"></div>
       <div class="viewport-guard-panel" id="viewport-guard-panel">
         <div class="viewport-guard-dot"></div>
-        <div class="viewport-guard-text" id="viewport-guard-text">⤢ Expand Browser</div>
+        <div class="viewport-guard-text" id="viewport-guard-text">Expand Browser Width</div>
       </div>
     `;
     document.body.appendChild(el);
@@ -48,13 +49,11 @@
       }
       #viewport-guard{
         position:fixed;
-        // inset:0;
+        inset:0;
         z-index:999999;
         display:grid;
-        place-items:center
-        position: fixed; 
-        inset: 0; 
-        z-index: 999999;
+        place-items:center;
+        // inset:0;
         display: grid; 
         place-items: center;
         height: 100vh;
@@ -110,16 +109,19 @@
   }
 
   // State
-  let mode = null;           // 'follow' | 'bounce' | null
+  let mode = null;             // 'follow' | 'bounce' | null
   let rafFollow = 0;         // animation gate for follow (we use rAF to throttle mousemove)
   let rafBounce = 0;
   let vel = { x: 2.2, y: 1.8 }; // px per frame for bounce
   let pos = { x: 16, y: 52 };
 
   function setMessage(kind) {
+    // text.textContent = (kind === 'mobile') ? '▧ Desktop ▧ Only ▧' : '▧ Expand ▧ Browser ▧';
     const text = document.getElementById('viewport-guard-text');
     if (!text) return;
-    text.textContent = (kind === 'mobile') ? '▧ Desktop ▧ Only ▧' : '▧ Expand ▧ Browser ▧';
+    if (kind === 'mobile') text.textContent = 'View On Desktop';
+    else if (kind === 'w') text.textContent = 'Expand Browser Width';
+    else if (kind === 'h') text.textContent = 'Expand Browser Height';
   }
 
   function show(kind) {

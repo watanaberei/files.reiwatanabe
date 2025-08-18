@@ -1,6 +1,6 @@
 
 .content {
-  padding: 0px 5px 0px  5px;
+  /* padding: 0px 5px 0px  5px; */
   display: flex;
   flex-direction: row;
   gap: 10px;

@@ -3,95 +3,53 @@
   box-sizing: border-box;
 }
 .glyph-logo-container.flat {
- padding: 1.91px 0px 0.67px 0px;
-  /* display: flex;
+  padding: 1.99px 0px 0.69px 0px;
+  display: flex;
   flex-direction: row;
-  gap: 0px; */
+  gap: 3.47px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  /* width: 30.3px; */
   position: relative;
+  overflow: hidden;
 }
 
 .glyph-logo-container.round {
-  padding: 1.41px 1px 0.15px 1px;
+  /* padding: 1.41px 1px 0.15px 1px;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   position: relative;
-}
-.glyph-logo-container.top-round {
-  padding: 1.91px 0px 0.67px 0px;
-  position: relative;
-  overflow: visible;
-}
-
-.logo-chromeos {
-  flex-shrink: 0;
-  width: 22.44px;
-  height: 22.44px;
-  position: relative;
-  overflow: visible;
-  vertical-align: middle;
-}
-
-.logo-budget {
-  flex-shrink: 0;
-  width: 30px;
-  height: 21.42px;
-  position: relative;
-  overflow: visible;
-  aspect-ratio: 46.51/32.13;
-  vertical-align: -webkit-baseline-middle;
-}
-
-.logo-taco-bell {
-  margin-left: 1px;
-  flex-shrink: 0;
-  width: 24.12px;
-  height: 21.93px;
-  position: relative;
-  overflow: visible;
-  aspect-ratio: 36.19/32.89;
-}
-
-.logo-ourrs {
-  flex-shrink: 0;
-  width: 21.37px;
-  height: 22.44px;
-  position: relative;
-  overflow: visible;
-  aspect-ratio: 21.37/22.44;
-}
-
-.logo-neumad {
-  flex-shrink: 0;
-  width: 30.3px;
-  height: 21.42px;
-  position: relative;
-  overflow: visible;
-  aspect-ratio: 30.3/21.42;
-}
-
-
-.glyph-logo-container-top-round,
-.glyph-logo-container-top-round * {
-  box-sizing: border-box;
-}
-.glyph-logo-container-top-round {
-  padding: 2.11px 1.5px 0.23px 1.5px;
+  padding: 1.41px 0px 0.15px 0px;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 3.33px;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-shrink: 0;
+  /* width: 24.44px; */
+  position: relative;
+
+}
+.glyph-logo-container.top-round {
+  padding: 1.41px 0px 0.67px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.67px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
   position: relative;
 }
-.logo-sea {
+
+
+
+
+
+.logo-SEA {
   flex-shrink: 0;
-  width: 22.44px;
-  height: 22.44px;
+  width: 28.44px;
+  height: 28.44px;
   position: relative;
   overflow: visible;
   aspect-ratio: 1;
@@ -99,8 +57,8 @@
 
 .logo-att {
   flex-shrink: 0;
-  width: 22.44px;
-  height: 22.44px;
+  width: 28.44px;
+  height: 28.44px;
   position: relative;
   overflow: visible;
 }
@@ -108,8 +66,8 @@
   margin-right: 1px;
   margin-left: 3px;
   flex-shrink: 0;
-  width: 22.31px;
-  height: 22.31px;
+  width: 24.31px;
+  height: 26.31px;
   position: relative;
   overflow: visible;
   aspect-ratio: 1;
@@ -126,7 +84,64 @@
   aspect-ratio: 1;
   vertical-align: middle;
 }
+.logo-chromeos {
+  flex-shrink: 0;
+  width: 24.44px;
+  height: 24.44px;
+  position: relative;
+  overflow: visible;
+  vertical-align: middle;
+}
+.logo-budget {
+  flex-shrink: 0;
+  width: 32px;
+  height: 23.42px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 46.51/32.13;
+  vertical-align: -webkit-baseline-middle;
+}
+.logo-taco-bell {
+  margin-left: 1px;
+  flex-shrink: 0;
+  width: 26.12px;
+  height: 23.93px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 36.19/32.89;
+}
+.logo-ourrs {
+  flex-shrink: 0;
+  width: 23.37px;
+  height: 24.44px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 21.37/22.44;
+}
+.logo-neumad {
+  flex-shrink: 0;
+  width: 32.3px;
+  height: 23.42px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 30.3/21.42;
+}
 
+
+
+.glyph-logo-container-top-round,
+.glyph-logo-container-top-round * {
+  box-sizing: border-box;
+}
+.glyph-logo-container-top-round {
+  padding: 2.11px 1.5px 0.23px 1.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
 
 
 
@@ -145,7 +160,8 @@
   display: flex;
   flex-direction: row;
   gap: 6.67px;
-  align-items: center;
+  width: fit-content;
+  align-items: flex-start;
   justify-content: flex-start;
   position: relative;
 }
@@ -318,3 +334,115 @@
   position: relative;
   overflow: visible;
 }
+
+
+
+
+
+
+
+.carrot-r-lower,
+.carrot-r-lower * {
+  box-sizing: border-box;
+}
+.carrot-r-lower {
+  padding: 7.83px 0px 0.7px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.67px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.icon-carrot-r-lowercase {
+  flex-shrink: 0;
+  width: 9.43px;
+  height: 15.47px;
+  position: relative;
+  overflow: visible;
+}
+
+
+.arrow-r-lowercase,
+.arrow-r-lowercase * {
+  box-sizing: border-box;
+}
+.arrow-r-lowercase {
+  padding: 7.83px 0px 0.7px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.67px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.icon-arrow-r-lowercase {
+  flex-shrink: 0;
+  width: 15.47px;
+  height: 15.47px;
+  position: relative;
+  overflow: visible;
+}
+
+.arrow-b-lowercase,
+.arrow-b-lowercase * {
+  box-sizing: border-box;
+}
+.arrow-b-lowercase {
+  width: 15.47px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+
+.dash-r-upper,
+.dash-r-upper * {
+  box-sizing: border-box;
+}
+.dash-r-upper {
+  opacity: 0.75;
+  padding: 1.91px 0px 0.67px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  margin-left: -3px;
+  width: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 22.5px;
+  position: relative;
+}
+.icon-dash-r-uppercase {
+  flex-shrink: 0;
+  width: 13.91px;
+  height: 22px;
+  align-items: flex-start;
+  position: relative;
+  overflow: visible;
+}
+
+
+
+.arrow-b-upper,
+.arrow-b-upper * {
+  box-sizing: border-box;
+}
+.arrow-b-upper {
+  padding: 1.91px 0px 0.67px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.67px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.icon-arrow-b-uppercase {
+  flex-shrink: 0;
+  width: 21.42px;
+  height: 21.42px;
+  position: relative;
+  overflow: visible;
+}
+
+  

@@ -1,13 +1,47 @@
 :root {   
-    --color-main: #1B2421;
-    --color-files: #E9AF19;
-    --color-cases: #1B2421;
-    --rws-bcg-e03: #1B2421;
-    --rws-ink-p03: #1B2421;
+    --rws-bcg-e00: #111211;
+    --rws-bcg-e01: #161917;
+    --rws-bcg-e02: #1a1e1b;
+    --rws-bcg-e03: #1b2421;
+    --rws-bcg-e04: #242f2c;
+    --rws-bcg-e05: #2e3c38;
+    --rws-bcg-e06: #3a4945;
+    --rws-ink-p00: #d2cfdf;
+    --rws-ink-p01: #dedce9;
+    --rws-ink-p02: #e4e3ec;
+    --rws-ink-p03: #eae9f0;
+    --rws-ink-p04: #edecf4;
+    --rws-ink-p05: #f3f2f8;
     --rws-ink-p06: #f6f6fb;
+    --rws-gry-p01: #bdbbc9;
+    --rws-gry-p02: #818787;
+    --rws-gry-p03: #68647d;
+    --rws-tex-p03: rgba(234, 233, 240, 0.01);
+    --rws-bcg-e00: #fdfdff;
+    --rws-bcg-e01: #fafbff;
+    --rws-bcg-e02: #f8f8fa;
+    --rws-bcg-e03: #f4f5f8;
+    --rws-bcg-e04: #f1f2f7;
+    --rws-bcg-e05: #eaecf4;
+    --rws-ink-e00: #485955;
+    --rws-ink-e01: #394945;
+    --rws-ink-e02: #2d3936;
+    --rws-ink-e03: #222c29;
+    --rws-ink-e04: #202521;
+    --rws-ink-e05: #1c1e1c;
     --rws-ink-e06: #151615;
-    --rws-warning: #E94523;
-    --rws-bcg-files: #E9AF19;
+    --rws-tex-e01: rgba(32, 37, 33, 0.01);
+    --rws-tex-e03: rgba(32, 37, 33, 0.03);
+    --rws-utl-b03: #3275e0;
+    --rws-utl-y01: #e3c26b;
+    --rws-utl-y03: #f2c140;
+    --rws-utl-y06: #e9af19;
+    --rws-utl-r01: #e2a38f;
+    --rws-utl-r03: #e94523;
+    --rws-utl-r06: #ae483f;
+    --rws-utl-g03: #35ba20;
+    --rws-utl-g01: #6dd450;
+  
 
     --r00: 3px;
     --r01: 5px;
@@ -76,4 +110,19 @@
     --text04m-letter-spacing: 0.03pt;
     --text05m-letter-spacing: 0.03pt;
     --text06m-letter-spacing: 0.03pt;
+
+    --rws-shd-d01: 
+      inset 0.15px 0.3px 0.45px 0px rgba(0, 0, 0, 0.45),
+      inset 0.45px 0.9px 1.5px 0px rgba(0, 0, 0, 0.15),
+      inset -0.3px -0.6px 0.9px 0px rgba(255, 255, 255, 0.45),
+      inset -0.9px -1.8px 3px 0px rgba(255, 255, 255, 0.15);
+    --rws-shd-d02:
+      0px 4.83px 4.83px 0px rgba(0, 0, 0, 0.25),
+      0px 2.41px 25.36px 0px rgba(0, 0, 0, 0.15),
+      0px 38.64px 77.28px 0px rgba(0, 0, 0, 0.19);
+    --rws-shd-d06:  
+      30px 60px 80px 0px rgba(55, 84, 170, 0.1),
+      -30px -60px 80px 0px rgba(255, 255, 255, 0.1),
+      inset 4px 8px 20px 0px rgba(255, 255, 255, 0.15),
+      -5px -10px 20px 0px rgba(0, 0, 0, 0.03);
   }

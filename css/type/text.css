@@ -2,7 +2,7 @@
 
 
 .headline {
-    padding: 25px 30px 60px 30px;
+    padding: 15px 15px 60px 15px;
     align-self: stretch;
     flex-shrink: 0;
     display: grid;
@@ -14,8 +14,8 @@
   }
 
 .header {
-    padding: 0px 30px 0px 30px;
-    align-self: stretch;
+    /* padding: 0px 30px 0px 30px;
+    align-self: stretch; */
     flex-shrink: 0;
     display: grid;
     gap: 5px;
@@ -38,7 +38,7 @@
     grid-row: 1 / span 1; */
   }
   .header {
-    padding: 0px 15px 0px 15px;
+    /* padding: 0px 15px 0px 15px; */
     align-self: stretch;
     flex-shrink: 0;
     display: grid;
@@ -89,8 +89,9 @@
   .title-project {
     display: flex;
     flex-direction: row;
+    width: fit-content;
     gap: 10px;
-    align-items: center;
+    /* align-items: normal; */
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
@@ -178,7 +179,7 @@
 
     & span.text {
         display: flex;
-        gap: 3px;
+        gap: -3px;
         justify-content: flex-start;
         flex-direction: row;
         align-items:  anchor-center;
@@ -208,7 +209,7 @@
 
 
 .warning {
-    color: var(--rws-warning);
+    color: var(--rws-utl-r03);
 }
 
 .text > .text-logo {
@@ -268,8 +269,10 @@ span.title {
     width: fit-content;
     flex-shrink: 0;
     position: relative;
+    align-items: flex-end;
+    position: relative;
   }
-  .title-company {
+  .title-account {
     display: flex;
     flex-direction: row;
     gap: 0px;
@@ -307,4 +310,20 @@ span.title {
 
 .signature-text {
     color: var(--rws-ink-e06) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider {
+ align-items: center;
 }

@@ -1,0 +1,117 @@
+.rw-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    display: grid;
+    place-items: center;
+    background: var(--rw-files);
+}
+.rw-loader__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffd54a;
+    animation: rw-pulse .9s infinite ease-in-out 
+}
+@keyframes rw-pulse {
+    0%, 
+    100% {
+        transform: scale(.85);
+        opacity: .6;
+    }
+    50% {
+        transform: scale(1.25);
+        opacity: 1;
+    }
+}
+
+/* Hover info (hidden by default;
+shown on .item: hover) */
+.subtext{
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity .25s ease, transform .25s ease;
+    pointer-events: none
+}
+.tag-list {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.list {
+    display: inline-block;
+    opacity: .9;
+}
+
+.item:hover.subtext {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Image lazy placeholder on the wrapper .image */
+.image.thumb-loading {
+  background:  var(--rw-files) center / cover no-repeat;
+}
+.image.thumb-loaded {
+  background:  none;
+}
+
+
+/* Scroll-in (initial state) */
+.anim-text {
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity;
+}
+
+.anim-card {
+  transform: translateY(100px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.anim-image {
+  filter: none;
+  will-change: filter;
+}
+
+.anim-account {
+  transition: background-color .5s ease;
+}
+
+
+/* Activated state (when observed) */
+.is-in .anim-text {
+    opacity: 1;
+    width: auto;
+    transform: translateY(0);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+.is-in.anim-card {
+    opacity: 1;
+    transform: translateY(0);
+    transition:  opacity .6s ease, 
+    transform .6s cubic-bezier(
+        .2, .7, .2, 1
+        );
+}
+
+.is-in .anim-image {
+    filter: drop-shadow (
+        var(
+            --card-shadow, 0 20px 60px rgba(0, 0, 0, .35)
+            ));
+}
+
+.is-in.anim-account {
+    /* background-color: var(--account-tint, rgba(255, 213, 74, .08)); */
+    background-color: var(--rws-ink-e03);
+}

@@ -4,18 +4,20 @@
 .item-account,
 .item-account * {
   box-sizing: border-box;
+  /* width: fit-content; */
+  align-items: center;
 }
 .item-account {
     border-radius: var(--r03);
     padding: var(--s03);
     background-color: var(--rws-bcg-e03, #1b2421);
-  gap: var(--s06);
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
+    gap: var(--s06);
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
 }
 
-.company-name {
+.account-name {
   /* display: flex; */
   flex-direction: row;
   gap: 0px;

@@ -46,45 +46,25 @@ export const ComponentCard = {
     const aName = accountName || aid;
     const pName = projectName || pid;
     const type  = String(kind || '').toLowerCase();
-
-    const arrow = Glyphs.glyphArrow.render();
-    const dash = Glyphs.glyphDashRUpper.render();
     const glyphHTML = renderGlyph(aid);
     const href = `./screens/${aid}/${pid}.html`;
 
     const body = `
       <div class="content">
-        <div class="stack">
-          <div class="title">
-
-
-            <span class="text text-logo title-account">
-              <div class="logo-slot">
-                ${glyphHTML}
-              </div>
-              <span class="text02 divider light">
-              ${dash}
-              </span>
-              
-            </span>
-            <span class="title-project">
-              <span class="text02 anim-text">
-                ${pName}
-              </span>
-              <span class="glyph glyph-arrow flat">
-                  ${arrow}
-              </span>
-            </span>
-          </div>
-
-
-          <div class="subtitle">
-            ${publicView === 'off' ? `
-              <span class="text02 warning">
-                Coming Soon
-              </span>
-              ` : ``}
-          </div>
+        <div class="title stack">
+          <span class="title-company">
+            <div class="logo-slot">
+              ${glyphHTML}
+            </div>
+            <span class="text02">${aName}</span>
+          </span>
+          <span class="divider">
+            <span class="text02 regular"> / </span>
+          </span>
+          <span class="title-project">
+            <span class="text02">${pName}</span>
+          </span>
+          ${publicView === 'off' ? `<span class="text02">Coming Soon</span>` : ``}
         </div>
       </div>
       <div class="image">
@@ -94,14 +74,14 @@ export const ComponentCard = {
 
     if (publicView !== 'on') {
       // Non-clickable
-      return `<<div class="item grid04 col04 row01">${body}</div>`;
+      return `<div class="item">${body}</div>`;
     }
 
     // Clickable according to type
     if (type === 'design') {
       // open in NEW TAB
       return `
-        <a href="${href}" target="_blank" rel="noopener" class="item grid04 col04 row01">
+        <a href="${href}" target="_blank" rel="noopener" class="item">
           ${body}
         </a>
       `;
@@ -110,7 +90,7 @@ export const ComponentCard = {
     if (type === 'prototype') {
       // open in NEW WINDOW (full screen attempt)
       return `
-        <a href="javascript:void(0);" onclick="openPrototype('${href}');" class="item grid04 col04 row01">
+        <a href="javascript:void(0);" onclick="openPrototype('${href}');" class="item">
           ${body}
         </a>
       `;
@@ -118,7 +98,7 @@ export const ComponentCard = {
 
     // default (if type missing): preserve existing behavior
     return `
-      <a href="javascript:void(0);" onclick="openDesign('${href}');" class="item grid04 col04 row01">
+      <a href="javascript:void(0);" onclick="openDesign('${href}');" class="item">
         ${body}
       </a>
     `;
