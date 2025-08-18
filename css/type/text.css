@@ -38,7 +38,7 @@
     grid-row: 1 / span 1; */
   }
   .header {
-    /* padding: 0px 15px 0px 15px; */
+    padding: 0px 10px 0px 10px;
     align-self: stretch;
     flex-shrink: 0;
     display: grid;
@@ -266,7 +266,7 @@ span.title {
     display: flex;
     flex-direction: row;
     gap: 0px;
-    width: fit-content;
+    width: -webkit-fill-available;
     flex-shrink: 0;
     position: relative;
     align-items: flex-end;
