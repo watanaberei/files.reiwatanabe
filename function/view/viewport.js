@@ -119,7 +119,7 @@
     // text.textContent = (kind === 'mobile') ? '▧ Desktop ▧ Only ▧' : '▧ Expand ▧ Browser ▧';
     const text = document.getElementById('viewport-guard-text');
     if (!text) return;
-    if (kind === 'mobile') text.textContent = 'View On Desktop';
+    if (kind === 'mobile') text.textContent = '<span class="Text01">View On Desktop</span>';
     else if (kind === 'w') text.textContent = 'Expand Browser Width';
     else if (kind === 'h') text.textContent = 'Expand Browser Height';
   }
