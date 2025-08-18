@@ -1,6 +1,38 @@
 // /projectData.js
 
 export const projectData = {
+Ourrs: {
+  "Ecommerce": {
+    accountId: "Ourrs",
+    projectId: "Ecommerce",
+    type: "design",
+    category: "Working File",
+    accountName: "Ourrs",
+    projectName: "Ecommerce",
+    projectDescription: "Ecommerce",
+    fileKey: "4V95AGqunAQzgrS48AT3mw",
+    fileName: "discovery.html",
+    publicView: "on",
+    attributes: ["Personal Project", "Startup", "Home Goods"],    // optional display name
+    discipline: ["Ecommerce", "Pitch", "Prototype"],
+    brandColor: "#00A8E0",
+  },
+  "Prototype": {
+    accountId: "Ourrs",
+    projectId: "Prototype",
+    type: "prototype",
+    category: "Demo",
+    accountName: "Ourrs",
+    projectName: "Prototype",
+    projectDescription: "Prototype",
+    fileKey: "4V95AGqunAQzgrS48AT3mw",
+    fileName: "discovery.html",
+    publicView: "on",
+    attributes: ["Systems", "Docs", "Exploration"],
+  }
+},
+
+
 ATT: {
   "Low-Midfunnel": {
     accountId: "ATT",
@@ -32,39 +64,6 @@ ATT: {
     discipline: ["UX/UI", "Web", "Audit"],
     brandColor: "#00A8E0",
     // accountName/groupTitle optional; will inherit from the first project if omitted
-  }
-},
-
-
-
-Ourrs: {
-  "Ecommerce": {
-    accountId: "Ourrs",
-    projectId: "Ecommerce",
-    type: "design",
-    category: "Working File",
-    accountName: "Ourrs",
-    projectName: "Ecommerce",
-    projectDescription: "Ecommerce",
-    fileKey: "4V95AGqunAQzgrS48AT3mw",
-    fileName: "discovery.html",
-    publicView: "on",
-    attributes: ["Personal Project", "Startup", "Home Goods"],    // optional display name
-    discipline: ["Ecommerce", "Pitch", "Prototype"],
-    brandColor: "#00A8E0",
-  },
-  "Prototype": {
-    accountId: "Ourrs",
-    projectId: "Prototype",
-    type: "prototype",
-    category: "Demo",
-    accountName: "Ourrs",
-    projectName: "Prototype",
-    projectDescription: "Prototype",
-    fileKey: "4V95AGqunAQzgrS48AT3mw",
-    fileName: "discovery.html",
-    publicView: "on",
-    attributes: ["Systems", "Docs", "Exploration"],
   }
 },
 
