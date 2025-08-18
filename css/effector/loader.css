@@ -123,7 +123,7 @@ img.thumb-loaded {
 @keyframes rw-container {
     0% { transform: translateY(50px);}
     100% {
-        transform: translateY(1500px);
+        transform: translateY(15px);
     }
 }
 
