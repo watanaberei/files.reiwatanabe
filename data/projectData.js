@@ -88,6 +88,25 @@ SEA: {
 
 
 
+Neumad: {
+  "Places": {
+    accountId: "Neumad",
+    projectId: "Places",
+    type: "design",
+    category: "Working File",
+    accountName: "Neumad",
+    projectName: "Places",
+    projectDescription: "Discovery endorsed places",
+    fileKey: "4V95AGqunAQzgrS48AT3mw",
+    fileName: "discovery.html",
+    publicView: "off",
+    attributes: ["Systems", "Docs", "Exploration"],
+  }
+},
+
+
+
+
 Medialink: {
   "Live": {
     accountId: "Medialink",
@@ -180,24 +199,6 @@ TacoBell: {
     fileKey: "4V95AGqunAQzgrS48AT3mw",
     fileName: "discovery.html",
     publicView: "on",
-    attributes: ["Systems", "Docs", "Exploration"],
-  }
-},
-
-
-
-Neumad: {
-  "Places": {
-    accountId: "Neumad",
-    projectId: "Places",
-    type: "design",
-    category: "Working File",
-    accountName: "Neumad",
-    projectName: "Places",
-    projectDescription: "Discovery endorsed places",
-    fileKey: "4V95AGqunAQzgrS48AT3mw",
-    fileName: "discovery.html",
-    publicView: "off",
     attributes: ["Systems", "Docs", "Exploration"],
   }
 },
