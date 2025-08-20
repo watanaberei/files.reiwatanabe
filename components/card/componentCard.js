@@ -88,7 +88,7 @@ export const ComponentCard = {
         </div>
       </div>
       <div class="image">
-        <img src="/asset/media/thumbnail/${aid}/${pid}.png" alt="${pName}">
+        <img src="/asset/media/thumbnail/${aid}/${pid}.jpg" alt="${pName}">
       </div>
     `;
 
