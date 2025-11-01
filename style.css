@@ -1,4 +1,51 @@
+body {
+  background-color: #F1F1F1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+.works {
+  background-color: purple;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+.frame {
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD */
+
+
+
+
+
+
+
+
+
+
 .row.bottom {
+    
     bottom: 0px !important;
     position: absolute !important;
 }
