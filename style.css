@@ -57,7 +57,9 @@ body {
     opacity: 1 !important;
     width: 100%;
 }
-
+h2 {
+  display: inline-block !important;
+}
 
 
 
